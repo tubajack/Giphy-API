@@ -32,6 +32,24 @@ window.onload = function(){
             method: "GET"
 
         }).then(function(response){
+            var results = response.data;
+
+            for(var p = 0; p < results.length; p++){
+                var gif = $("<div>");
+
+                var rating = results[p].rating;
+
+                var t = $("<p>").text("Rating: " + rating);
+
+                var personImage = $("<img>");
+                personImage.attr("src", results[p].images.fixed_height.url);
+
+                gif.prepend(t);
+                gif.prepend(personImage);
+
+                $("#gifs-appear-here").prepend(gif);
+
+            }
 
         })
 
