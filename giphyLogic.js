@@ -47,7 +47,7 @@ window.onload = function(){
                 gif.prepend(t);
                 gif.prepend(personImage);
 
-                $("#gifs-appear-here").prepend(gif);
+                $("#gifs-show-up").prepend(gif);
 
             }
 
