@@ -24,6 +24,9 @@ window.onload = function(){
         var musicalInstrument = $(this).attr("data");
         console.log(musicalInstrument);
 
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" 
+        + musicalInstrument + "&api_key=ZoA453GaabwjKDDflogoSaFJnc6BOvd2&limit=10";
+
     });
 
 
