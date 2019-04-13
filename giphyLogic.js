@@ -26,7 +26,7 @@ window.onload = function(){
 
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" 
         + musicalInstrument + "&api_key=ZoA453GaabwjKDDflogoSaFJnc6BOvd2&limit=10";
-
+        console.log(queryURL)
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -42,6 +42,11 @@ window.onload = function(){
                 var t = $("<p>").text("Rating: " + rating);
 
                 var personImage = $("<img>");
+                personImage.attr("data-animate", results[p].images.fixed_height.url);
+                personImage.addClass('returned-gif')
+                personImage.attr("data-state", "animated")
+
+                personImage.attr("data-still", results[p].images.fixed_height_still.url);
                 personImage.attr("src", results[p].images.fixed_height.url);
 
                 gif.prepend(t);
@@ -69,5 +74,28 @@ window.onload = function(){
         //Call the function which handles the array
         displayButton();
     });
+
+    
+    $(document).on("click", ".returned-gif", function(event){
+        console.log('click works')
+
+        var state = $(this).attr('data-state')
+        console.log(state);
+
+        if (state === 'animated') {
+            $(this).attr('src', $(this).attr("data-still"))
+            $(this).attr("data-state", "still")
+        }
+        else{
+            $(this).attr('src', $(this).attr("data-animate"))
+            $(this).attr("data-state", "animated")
+        }
+        // data-state === still
+            // update src to animated
+            // set data state = animated
+        
+    });
+
+
 
 }
