@@ -1,10 +1,10 @@
-#buttons{
-    background-color: blue; 
-    border: 2px red;
-    color: green;
-    text-decoration: none;
+#buttons {
+    color: white;
+    text-align: center;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid green;
   }
   
   #instruments-form{
