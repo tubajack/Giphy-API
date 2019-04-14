@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    instruments = ["tuba", "trumpet", "clarinet", "flute", "saxophone"];
+    instruments = ["tuba", "trumpet", "drums", "flute", "saxophone"];
 
     displayButton();
 
