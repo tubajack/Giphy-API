@@ -5,6 +5,7 @@ window.onload = function(){
 
     displayButton();
 
+    //This function is used to display the buttons onto the screen
     function displayButton(){
 
         $("#buttons").empty();
