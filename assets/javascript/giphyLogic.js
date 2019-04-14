@@ -81,7 +81,6 @@ window.onload = function(){
     //This is the function that will allow to user to manipulate
     //the state of the gifs. The gifs are either animated or still.
     $(document).on("click", ".returned-gif", function(event){
-        console.log('click works')
 
         var state = $(this).attr('data-state')
         console.log(state);
@@ -94,9 +93,6 @@ window.onload = function(){
             $(this).attr('src', $(this).attr("data-animate"))
             $(this).attr("data-state", "animated")
         }
-        // data-state === still
-            // update src to animated
-            // set data state = animated
         
     });
 
