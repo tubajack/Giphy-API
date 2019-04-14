@@ -1,5 +1,6 @@
 window.onload = function(){
 
+    //Set up the original array of instruments. Since I play tuba, it is listed first.
     instruments = ["tuba", "trumpet", "drums", "flute", "saxophone"];
 
     displayButton();
