@@ -78,6 +78,8 @@ window.onload = function(){
     });
 
     
+    //This is the function that will allow to user to manipulate
+    //the state of the gifs. The gifs are either animated or still.
     $(document).on("click", ".returned-gif", function(event){
         console.log('click works')
 
