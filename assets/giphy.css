@@ -1,12 +1,19 @@
 #buttons{
-  background-color: blue; 
-  border: 2px red;
-  color: green;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-}
-
-#instruments-form{
-    color: red;
-}
+    background-color: blue; 
+    border: 2px red;
+    color: green;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  #instruments-form{
+      color: black;
+      font-size: 16px;
+  }
+  
+  #add-instrument{
+      color: black;
+      text-align: center;
+      border: 2px solid green;
+  }
